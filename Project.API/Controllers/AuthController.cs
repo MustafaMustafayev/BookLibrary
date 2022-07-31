@@ -47,6 +47,7 @@ namespace Project.API.Controllers
                 return Ok(userDTO);
             }
 
+            // generate expiration date for token
             DateTime expirationDate = DateTime.Now.AddHours(3);
 
             var claims = new List<Claim>();
